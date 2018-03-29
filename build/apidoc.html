@@ -1,0 +1,1796 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    overflow-wrap: break-word;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/kaizhu256/node-swgg-github-issues"
+
+    >swgg-github-issues (v2018.1.16)</a>
+</h1>
+<h4>this zero-dependency package will provide a (nodejs-compatible) swagger-client for github-issues's web-apis, with a working web-demo</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swgg-github-issues">module swgg-github-issues</a><ol>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.swgg.apiDict">module swgg.apiDict</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Fissues_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fissues_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET.ajax">
+            function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET.ajax
+            <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swgg-github-issues" id="apidoc.module.swgg-github-issues">module swgg-github-issues</a></h1>
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.swgg.apiDict" id="apidoc.module.swgg.apiDict">module swgg.apiDict</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Fissues_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Fissues_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Fissues_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Fissues_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /issues&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Fissues_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;filter&quot;: &quot;assigned&quot;,
+        &quot;state&quot;: &quot;open&quot;,
+        &quot;labels&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;created&quot;,
+        &quot;direction&quot;: &quot;desc&quot;,
+        &quot;since&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/assignees&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/assignees/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fassignees_2F_7Bassignee_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;assignee&quot;: &quot;assignee&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;state&quot;: &quot;open&quot;,
+        &quot;assignee&quot;: &quot;abcd1234&quot;,
+        &quot;creator&quot;: &quot;abcd1234&quot;,
+        &quot;mentioned&quot;: &quot;abcd1234&quot;,
+        &quot;labels&quot;: &quot;abcd1234&quot;,
+        &quot;sort&quot;: &quot;created&quot;,
+        &quot;direction&quot;: &quot;desc&quot;,
+        &quot;since&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;POST /repos/{}/{}/issues&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_20POST&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;body&quot;: {
+            &quot;assignee&quot;: &quot;abcd1234&quot;,
+            &quot;assignees&quot;: [
+                &quot;octocat&quot;
+            ],
+            &quot;body&quot;: &quot;I&apos;m having a problem with this.&quot;,
+            &quot;labels&quot;: [
+                &quot;bug&quot;
+            ],
+            &quot;milestone&quot;: 1,
+            &quot;title&quot;: &quot;Found a bug&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;PATCH /repos/{}/{}/issues/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_20PATCH&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;body&quot;: {
+            &quot;assignee&quot;: &quot;abcd1234&quot;,
+            &quot;assignees&quot;: [
+                &quot;octocat&quot;
+            ],
+            &quot;body&quot;: &quot;I&apos;m having a problem with this.&quot;,
+            &quot;labels&quot;: [
+                &quot;bug&quot;
+            ],
+            &quot;milestone&quot;: 1,
+            &quot;state&quot;: &quot;open&quot;,
+            &quot;title&quot;: &quot;Found a bug&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/issues/{}/assignees&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;body&quot;: {
+            &quot;assignees&quot;: [
+                &quot;hubot&quot;,
+                &quot;other_user&quot;
+            ]
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;POST /repos/{}/{}/issues/{}/assignees&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fassignees_20POST&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;body&quot;: {
+            &quot;assignees&quot;: [
+                &quot;hubot&quot;,
+                &quot;other_user&quot;
+            ]
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/{}/comments&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;since&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;POST /repos/{}/{}/issues/{}/comments&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fcomments_20POST&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;body&quot;: {
+            &quot;body&quot;: &quot;Me too&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/{}/events&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Fevents_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/issues/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;POST /repos/{}/{}/issues/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20POST&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;PUT /repos/{}/{}/issues/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_20PUT&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/issues/{}/labels/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flabels_2F_7Bname_7D_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;name&quot;: &quot;name&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/issues/{}/lock&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;PUT /repos/{}/{}/issues/{}/lock&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Flock_20PUT&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.sailor-v-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;body&quot;: {
+            &quot;active_lock_reason&quot;: &quot;too heated&quot;,
+            &quot;lock_reason&quot;: &quot;abcd1234&quot;,
+            &quot;locked&quot;: true
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/{}/timeline&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2F_7Bnumber_7D_2Ftimeline_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.mockingbird-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/comments&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;sort&quot;: &quot;created&quot;,
+        &quot;direction&quot;: &quot;abcd1234&quot;,
+        &quot;since&quot;: &quot;abcd1234&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/issues/comments/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;id&quot;: &quot;id&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/comments/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;id&quot;: &quot;id&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;PATCH /repos/{}/{}/issues/comments/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fcomments_2F_7Bid_7D_20PATCH&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;id&quot;: &quot;id&quot;,
+        &quot;body&quot;: {
+            &quot;body&quot;: &quot;Me too&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/events#1&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_231_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/issues/events/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fissues_2Fevents_2F_7Bid_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.machine-man-preview&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;id&quot;: &quot;id&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;POST /repos/{}/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_20POST&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;body&quot;: {
+            &quot;color&quot;: &quot;f29513&quot;,
+            &quot;description&quot;: &quot;Houston, we have a problem&quot;,
+            &quot;name&quot;: &quot;bug&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/labels/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;name&quot;: &quot;name&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/labels/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;name&quot;: &quot;name&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;PATCH /repos/{}/{}/labels/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Flabels_2F_7Bname_7D_20PATCH&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;name&quot;: &quot;name&quot;,
+        &quot;body&quot;: {
+            &quot;color&quot;: &quot;b01f26&quot;,
+            &quot;description&quot;: &quot;Small bug fix required&quot;,
+            &quot;name&quot;: &quot;bug :bug:&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/milestones&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.jean-grey-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;state&quot;: &quot;open&quot;,
+        &quot;sort&quot;: &quot;due_on&quot;,
+        &quot;direction&quot;: &quot;asc&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;POST /repos/{}/{}/milestones&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_20POST&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.jean-grey-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;body&quot;: {
+            &quot;description&quot;: &quot;Tracking milestone for version 1.0&quot;,
+            &quot;due_on&quot;: &quot;2012-10-09T23:39:01Z&quot;,
+            &quot;state&quot;: &quot;open&quot;,
+            &quot;title&quot;: &quot;v1.0&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;DELETE /repos/{}/{}/milestones/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20DELETE&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.jean-grey-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/milestones/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.jean-grey-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;PATCH /repos/{}/{}/milestones/{}&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_20PATCH&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.jean-grey-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;,
+        &quot;body&quot;: {
+            &quot;description&quot;: &quot;Tracking milestone for version 1.0&quot;,
+            &quot;due_on&quot;: &quot;2012-10-09T23:39:01Z&quot;,
+            &quot;state&quot;: &quot;open&quot;,
+            &quot;title&quot;: &quot;v1.0&quot;
+        }
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET.ajax" id="apidoc.element.swgg.apiDict.operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET.ajax">
+        function <span class="apidocSignatureSpan">swgg.apiDict.</span>operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET.ajax
+        <span class="apidocSignatureSpan">(swaggerJson, onError)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET.ajax = function (swaggerJson, onError) {
+<span class="apidocCodeCommentSpan">/*
+ * this function will run the api-call &quot;GET /repos/{}/{}/milestones/{}/labels&quot;
+ * example usage:
+    swgg.apiDict[&quot;operationId._2Frepos_2F_7Bowner_7D_2F_7Brepo_7D_2Fmilestones_2F_7Bnumber_7D_2Flabels_20GET&quot;].ajax({
+        &quot;access_token&quot;: &quot;xxxxxxxx&quot;,
+        &quot;user-agent&quot;: &quot;Awesome-Octocat-App&quot;,
+        &quot;accept&quot;: [
+            &quot;application/vnd.github.symmetra-preview+json&quot;
+        ],
+        &quot;owner&quot;: &quot;owner&quot;,
+        &quot;repo&quot;: &quot;repo&quot;,
+        &quot;number&quot;: &quot;number&quot;
+    }, function (error, data) {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(data.responseJson || data.responseText);
+    });
+ */
+</span>    return local.apiAjax(self, swaggerJson, onError);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
